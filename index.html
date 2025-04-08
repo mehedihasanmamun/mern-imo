@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Timeline</title>
+  <style>
+    body {
+      background-color: #2f3640;
+      font-family: Arial, sans-serif;
+      color: #ccc;
+      padding: 40px;
+    }
+    .timeline {
+      position: relative;
+      margin: 0 auto;
+      padding-left: 50px;
+      max-width: 600px;
+      border-left: 2px solid #555;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline-icon {
+      position: absolute;
+      left: -74px; /* perfectly center on the line */
+      top: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 20px;
+      border: 2px solid #555;
+    }
+    .timeline-content {
+      background-color: #3b3b58;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    .label {
+      display: inline-block;
+      font-size: 12px;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .primary {
+      background-color: #007bff;
+    }
+    .danger {
+      background-color: hotpink;
+    }
+    .success {
+      background-color: #2be0c5;
+    }
+    .timeline-content p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+    .time {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+    .icon-primary {
+      background-color: #007bff;
+    }
+    .icon-danger {
+      background-color: hotpink;
+    }
+    .icon-success {
+      background-color: #2be0c5;
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon icon-primary">😊</div>
+      <div class="timeline-content">
+        <span class="label primary">Primary</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit.</p>
+        <div class="time">1 Hours Ago</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon icon-danger">😄</div>
+      <div class="timeline-content">
+        <span class="label danger">Danger</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit.</p>
+        <div class="time">2 Hours Ago</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-icon icon-success">😎</div>
+      <div class="timeline-content">
+        <span class="label success">Success</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit.</p>
+        <div class="time">6 Hours Ago</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
